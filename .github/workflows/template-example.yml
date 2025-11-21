@@ -1,0 +1,53 @@
+# Beispiel-Workflow fuer Skill-Forge-Projekte
+# Aktiviere diesen Workflow, indem du die `on:`-Sektion anpasst
+# oder mehrere Jobs auskommentierst. Entferne Kommentare nach Bedarf.
+
+name: skillforge-template-example
+
+on:
+  workflow_dispatch:
+    inputs:
+      run-pdf-export:
+        description: Exportiere Markdown als PDF?
+        type: boolean
+        default: false
+
+jobs:
+  docs-preview:
+    if: ${{ inputs.run-pdf-export == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node installieren (optional fuer Tools)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Abhaengigkeiten installieren
+        run: |
+          npm install -g markdown-pdf
+
+      - name: Markdown in PDF exportieren
+        run: |
+          markdown-pdf docs/checkpoints.md
+          markdown-pdf docs/qa-checklist.md
+
+      - name: Artefakte hochladen
+        uses: actions/upload-artifact@v4
+        with:
+          name: docs-pdf
+          path: |
+            docs/checkpoints.pdf
+            docs/qa-checklist.pdf
+
+  lint-placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Platzhalter-Check
+        run: |
+          echo "Ersetze diesen Job durch eure eigentlichen Tests oder CI-Schritte."

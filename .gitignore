@@ -1,0 +1,31 @@
+# Build artefacts
+/build/
+/dist/
+/output/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+*.tmp
+
+# Data dumps
+*.csv
+*.tsv
+*.json
+*.zip
+
+# Binary assets (filtern nach Bedarf)
+*.stl
+*.step
+*.kicad_pcb
+*.kicad_sch
+*.bin
+*.hex
+
+# GitHub specific
+.env
