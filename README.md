@@ -4,12 +4,28 @@ Dieses Repository ist das Startpaket fuer alle Skill-Forge-Projekte. Es ist bewu
 
 > **Hinweis:** Klicke auf GitHub auf **Use this template**, gib deinem Projekt einen Namen (z. B. `2025-kamenz-sensorbox`) und fuelle danach nur die vorhandenen Dateien.
 
+## Die ersten 10 Minuten
+Wenn du dieses Template neu benutzt und nur kurz Zeit hast:
+
+1. Oeffne `README.md` und trage **Projektname** und **1 Satz Ziel** ein.
+2. Oeffne `1-idea-forge/canvas.md` und schreibe in 2–3 Saetzen, **was ihr bauen wollt**.
+3. Setze im Ordner `1-idea-forge/checklist.md` die ersten Haken.
+
+Damit hast du schon einen sichtbaren Start und weisst, wo es weitergeht.
+
 ## So funktioniert es
 1. **Idee festhalten:** In `1-idea-forge/canvas.md` dein Ziel, die Nutzenden und das geplante Ergebnis beschreiben.
 2. **Checklisten nutzen:** In jedem Forge-Ordner gibt es eine `checklist.md`. Setze Haken, wenn etwas fertig ist.
 3. **Kurze Updates schreiben:** Einmal pro Woche etwas in `docs/checkpoints.md` eintragen.
 4. **Bilder & Videos ablegen:** In den Ordnern unter `assets/` speichern.
 5. **Am Ende alles sammeln:** In `5-skill-forge/handover.md` steht, was fuer den Abschluss wichtig ist.
+
+## Die fünf Forges in einfach
+- **Idea Forge (Ideenschmiede):** Hier entsteht die Idee. Du haeltst fest, **was** ihr baut, **fuer wen** es ist und **welches Material** ihr braucht.
+- **Maker Forge (Makerschmiede):** Hier wird das **Aussehen und Gehaeuse** geplant und gebaut (z. B. 3D-Druck, Laser, Holz, Kunststoff).
+- **Copper Forge (Kupferschmiede):** Hier geht es um **Elektronik**: Kabel, Sensoren, Lichter, Platinen.
+- **Code Forge (Codeschmiede):** Hier schreibst du den **Programmcode**, der dein Projekt steuert.
+- **Skill Forge (Skill-Schmiede):** Hier pruefst du alles, machst Fotos/Videos und bereitest die **Praesentation** vor.
 
 ## Verzeichnisstruktur
 ```

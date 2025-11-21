@@ -1,10 +1,14 @@
-# Checkpoints Log
+# Checkpoints Log (Projekt-Tagebuch)
 
-Dokumentiere hier regelmaessige Fortschritts-Updates. Ziel ist ein kurzer, aber kontinuerlicher Verlauf.
+Hier schreibst du kurz auf, **was in einem Treffen passiert ist**.
 
-| Datum | Forge | Kernfortschritt | Blocker | Naechster Schritt |
-|-------|-------|-----------------|---------|-------------------|
+Eine Zeile pro Check-in reicht. Du musst keine langen Texte schreiben.
+
+| Datum | Forge/Station | Was haben wir gemacht? | Gab es ein Problem? | Was machen wir als Naechstes? |
+|-------|---------------|------------------------|---------------------|------------------------------|
 | 2025-__ | Idea | | | |
 | | | | | |
 
-> Eine Zeile pro Check-in reicht. Verlinke bei Bedarf auf Issues oder Pull Requests.
+Beispiele fuer Eintraege:
+- "LED mit Arduino zum ersten Mal zum Blinken gebracht. Naechstes Mal: Sensor anschliessen."
+- "Gehaeuse im 3D-Programm gezeichnet, aber Druck hat noch Fehler. Naechstes Mal: Wandstaerke aendern."
